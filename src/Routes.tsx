@@ -1,12 +1,12 @@
 import { RouteObject, createBrowserRouter } from "react-router-dom"
-import DashboardLayout from "@/modules/dashboard/layout/DashboardLayout"
 import ErrorPage from "@/pages/ErrorPage"
-import Home from "@/modules/dashboard/pages/Home"
+import Home from "./pages/Home"
+import SampleLayout from "./layouts/SampleLayout"
 
 export const routes: RouteObject[] = [
   {
     path: "/",
-    element: <DashboardLayout />,
+    element: <SampleLayout />,
     errorElement: <ErrorPage />,
     children: [
       {
